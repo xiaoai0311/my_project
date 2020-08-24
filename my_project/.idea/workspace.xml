@@ -7,7 +7,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1gLX9F2gG77gqECNhAhE3hDfcoy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,7 +26,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../month04/redis_day03" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -41,5 +52,11 @@
       <updated>1597894692571</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="716" y="234" key="FileChooserDialogImpl" timestamp="1597981084941">
+      <screen x="67" y="27" width="1851" height="900" />
+    </state>
+    <state x="716" y="234" key="FileChooserDialogImpl/67.27.1851.900@67.27.1851.900" timestamp="1597981084941" />
   </component>
 </project>
