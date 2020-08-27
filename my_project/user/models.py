@@ -7,7 +7,7 @@ class User(models.Model):
     password = models.CharField('密码',max_length=32)
     course = models.CharField('课程',max_length=20)
     session = models.CharField('角色',max_length=20)
-    is_active = models.BooleanField('角色活跃情况',default=True)
+    is_active = models.IntegerField('是否活跃',default=1)
     created_time = models.DateTimeField('创建时间', auto_now_add=True)
     updated_time = models.DateTimeField('更新时间', auto_now=True)
 

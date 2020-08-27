@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>签到管理</title>
+</head>
+<!--<script type="text/javascript" src="/static/js/jquery-2.1.4.js" ></script>-->
+<!--<link rel="stylesheet" href="/static/css/select2.min.css"/>-->
+<!--<script type="text/javascript" src="/static/js/select2.min.js"></script>-->
+<body>
+<form method="post" action="search">
+  <a href="add">添加签到</a>
+  <a onclick="getValues()" href="" class="btn_btn-danger_input-sm">批量删除</a>
+  <!-- <div>
+    <select id="singleSelect" name='username' style="width: 200px;">
+            <option value="">--请选择--</option>
+            {% for l in lists %}
+            // 在select被触发时，对内部的option选项进行整理去重，在放到select内
+            <option value="">{{ l.student.username }}</option>
+            {% endfor %}
+    </select>
+    <button type="submit">搜索</button>
+    </div>  -->
+    <input type="search" name="username">
+    <button type="submit">搜索</button>
+</form>
+<!-- <script type="text/javascript">
+    $(document).ready(function(){
+         $('#singleSelect').select2()({
+         })
+    })
+</script> -->
+
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>课程</th>
+        <th>签到时间</th>
+        <th>到课情况</th>
+    </tr>
+    {% for l in page %}
+    <tr>
+        <td>{{ l.id }}</td>
+        <td>{{ l.student.username }}</td>
+        <td>{{ l.student.course}}</td>
+        <td>{{ l.sign_time}}</td>
+        <td>{{ l.is_onTime }}</td>
+    </tr>
+    {% endfor %}
+</table>
+    {% if page.has_previous %}
+    <a href="{% url 'records' %}?page={{ page.previous_page_number }}">上一页</a>
+    {% else %}
+    上一页
+    {% endif %}
+
+    {% for p in paginator.page_range %}
+    {% if p == page.number %}
+        {{ p }}
+    {% else %}
+        <a href="{% url 'records' %}?page={{ p }}">{{ p }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% if page.has_next %}
+    <a href="{% url 'records' %}?page={{ page.next_page_number }}">下一页</a>
+    {% else %}
+    下一页
+    {% endif %}
+
+</body>
+</html>

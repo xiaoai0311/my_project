@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>签到记录查询结果</title>
+</head>
+<body>
+<a href="view_show">返回</a>
+<br>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>课程</th>
+        <th>签到时间</th>
+        <th>到课情况</th>
+    </tr>
+    {% for l in lists %}
+    <tr>
+        <td>{{ l.id }}</td>
+        <td>{{ l.student.username }}</td>
+        <td>{{ l.student.course}}</td>
+        <td>{{ l.sign_time}}</td>
+        <td>{{ l.is_onTime }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<!--    {% if page.has_previous %}-->
+<!--    <a href="{% url 'results' %}?page={{ page.previous_page_number }}">上一页</a>-->
+<!--    {% else %}-->
+<!--    上一页-->
+<!--    {% endif %}-->
+
+<!--    {% for p in paginator.page_range %}-->
+<!--    {% if p == page.number %}-->
+<!--        {{ p }}-->
+<!--    {% else %}-->
+<!--        <a href="{% url 'results' %}?page={{ p }}">{{ p }}</a>-->
+<!--    {% endif %}-->
+<!--    {% endfor %}-->
+
+<!--    {% if page.has_next %}-->
+<!--    <a href="{% url 'results' %}?page={{ page.next_page_number }}">下一页</a>-->
+<!--    {% else %}-->
+<!--    下一页-->
+<!--    {% endif %}-->
+</body>
+</html>

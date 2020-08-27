@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="168974bd-6b4b-4d63-8661-854ff4866ade" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/migrations/0002_auto_20200827_1107.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/migrations/0003_delete_attendence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/migrations/0004_attendence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/migrations/0005_attendence_is_ontime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/templates/attendence/add_attendence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/templates/attendence/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendence/templates/attendence/view_show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.1.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/0002_auto_20200826_2054.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendence/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendence/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendence/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendence/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendence/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendence/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,7 +52,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/study_bilibili/day07/cache" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -64,5 +86,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="716" y="234" key="FileChooserDialogImpl" timestamp="1598526198811">
+      <screen x="67" y="27" width="1851" height="900" />
+    </state>
+    <state x="716" y="234" key="FileChooserDialogImpl/67.27.1851.900@67.27.1851.900" timestamp="1598526198811" />
   </component>
 </project>
